@@ -27,5 +27,39 @@
     "isPublic": {
       "boolean": {}
     }
+  },
+  "ProductCategory": {
+    "name": {
+      "string": {}
+    },
+    "imageUrl": {
+      "regexp": "https://picsum.photos/300/300"
+    },
+    "description": {
+      "loremParagraphs": { "minLength": 100, "maxLength": 200 }
+    },
+    "isPublic": {
+      "boolean": {}
+    }
+  },
+  "Product": {
+    "name": {
+      "string": {}
+    },
+    "imageUrl": {
+      "regexp": "https://picsum.photos/300/300"
+    },
+    "price": {
+      "int": { "min": 500, "max": 10000 }
+    },
+    "description": {
+      "loremParagraphs": { "minLength": 100, "maxLength": 200 }
+    },
+    "isPublic": {
+      "boolean": {}
+    },
+    "category" : {
+      "belongsTo": "ProductCategory"
+    }
   }
 }
