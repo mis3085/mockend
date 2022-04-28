@@ -28,7 +28,7 @@
       "boolean": {}
     }
   },
-  "ProductCategory": {
+  "Category": {
     "name": {
       "string": {}
     },
@@ -59,7 +59,7 @@
       "boolean": {}
     },
     "category" : {
-      "belongsTo": "ProductCategory"
+      "belongsTo": "Category"
     }
   }
 }
