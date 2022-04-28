@@ -30,7 +30,7 @@
   },
   "Category": {
     "name": {
-      "loremWords": { "minLength": 2, "maxLength": 3 }
+      "loremWords": { "minLength": 10, "maxLength": 20 }
     },
     "imageUrl": {
       "regexp": "https://picsum.photos/300/300"
@@ -44,7 +44,7 @@
   },
   "Product": {
     "name": {
-      "loremWords": { "minLength": 2, "maxLength": 3 }
+      "loremWords": { "minLength": 10, "maxLength": 20 }
     },
     "imageUrl": {
       "regexp": "https://picsum.photos/300/300"
