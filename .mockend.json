@@ -30,7 +30,7 @@
   },
   "Category": {
     "name": {
-      "string": {}
+      "loremWords": { "minLength": 2, "maxLength": 3 }
     },
     "imageUrl": {
       "regexp": "https://picsum.photos/300/300"
@@ -44,7 +44,7 @@
   },
   "Product": {
     "name": {
-      "string": {}
+      "loremWords": { "minLength": 2, "maxLength": 3 }
     },
     "imageUrl": {
       "regexp": "https://picsum.photos/300/300"
@@ -60,6 +60,26 @@
     },
     "categoryId" : {
       "int": { "min": 1, "max": 100 }
+    },
+    "color": {
+      "string": [
+        "Red",
+        "Orange",
+        "Yellow",
+        "Green",
+        "Cyan",
+        "Blue",
+        "Purple"
+      ]
+    },
+    "size": {
+      "string": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ]
     }
   }
 }
