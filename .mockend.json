@@ -29,6 +29,12 @@
     }
   },
   "Category": {
+    "slug": {
+      "string": {}
+    },
+    "sort": {
+      "int": { "min": 1, "max": 1000 }
+    },
     "name": {
       "loremWords": { "minLength": 10, "maxLength": 20 }
     },
@@ -43,11 +49,20 @@
     }
   },
   "Product": {
+    "slug": {
+      "string": {}
+    },
     "name": {
       "loremWords": { "minLength": 10, "maxLength": 20 }
     },
     "imageUrl": {
-      "regexp": "https://picsum\\.photos/id/[0-9]{2}/300/300"
+      "regexp": "https://picsum\\.photos/id/[1-9]{2}/300/300"
+    },
+    "sort": {
+      "int": { "min": 1, "max": 1000 }
+    },
+    "hot": {
+      "int": { "min": 1, "max": 1000 }
     },
     "price": {
       "int": { "min": 500, "max": 10000 }
